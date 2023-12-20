@@ -1,50 +1,29 @@
 import { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import { Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import Location from './pages/Location';
+import Registry from './pages/Registry';
+import Story from './pages/Story';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('ourStory');
+    return (
 
-  const handleSectionChange = (section) => {
-    setActiveSection(section);
-  };
-
-  return (
-    <>
-      <header>
-        <h1>Wedding Planner</h1>
-      </header>
-
-      <nav>
-        <ul>
-          <li
-            className={activeSection === 'ourStory' ? 'active' : ''}
-            onClick={() => handleSectionChange('ourStory')}
-          >
-            Our Story
-          </li>
-          <li
-            className={activeSection === 'location' ? 'active' : ''}
-            onClick={() => handleSectionChange('location')}
-          >
-            Location
-          </li>
-          <li
-            className={activeSection === 'weather' ? 'active' : ''}
-            onClick={() => handleSectionChange('weather')}
-          >
-            Weather
-          </li>
-        </ul>
-      </nav>
-
-      <main>
-        {/* Content for each section goes here */}
-        {activeSection === 'ourStory' && <p>Our love story...</p>}
-        {activeSection === 'location' && <p>Details about the location...</p>}
-        {activeSection === 'weather' && <p>Weather information...</p>}
-      </main>
-    </>
+      <div className="App">
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/location" element={<Location />} />
+        <Route path="/registry" element={<Registry />} />
+        <Route path="/story" element={<Story />} />
+      </Routes>
+   
+    </div>
   );
+    
+
+
 }
 
 export default App;
