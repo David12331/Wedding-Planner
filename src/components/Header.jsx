@@ -4,23 +4,20 @@ function Header (){
 
 return (
 
-    <header>
-
-        
-           
+    <header className="sidebar">
 
           
-      <div className="sidebar">
+      
         <h1>Bob and Mary</h1>
-        <div className="links-container">
+        
         <Link to="/">Home </Link>
             <Link to="/location">Location </Link>
             <Link to="/registry">Registry </Link>
             <Link to="/story">Story </Link>
-        </div>
+       
      
    
-    </div>
+
 
 
         
