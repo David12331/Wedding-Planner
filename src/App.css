@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 } */
+
+.App {
+  display: flex;
+  padding-left: 250px; /* Adjust this value based on your sidebar width */
+}

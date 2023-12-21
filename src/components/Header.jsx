@@ -8,7 +8,7 @@ return (
 
           
       
-        <h1>Bob and Mary</h1>
+        <h1>David and Sara</h1>
         
         <Link to="/">Home </Link>
             <Link to="/location">Location </Link>

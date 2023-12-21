@@ -8,22 +8,20 @@ import Registry from './pages/Registry';
 import Story from './pages/Story';
 
 function App() {
-    return (
-
-      <div className="App">
+  return (
+    <div className="App">
       <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/location" element={<Location />} />
-        <Route path="/registry" element={<Registry />} />
-        <Route path="/story" element={<Story />} />
-      </Routes>
-   
+      <div className="content-container">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/registry" element={<Registry />} />
+          <Route path="/story" element={<Story />} />
+        </Routes>
+      </div>
     </div>
   );
-    
-
-
 }
 
-export default App;
+
+export default App
