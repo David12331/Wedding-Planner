@@ -1,13 +1,4 @@
-/* body {
-    margin: 0;
-  } */
-  
-  /* .home-container {
-    display: flex;
-    height: 100vh;
-    background-color: peachpuff;  
-  }
-   */
+
    .sidebar {
     width: 250px;
     background-color: peachpuff;
@@ -21,17 +12,4 @@
     top: 0;
     bottom: 0;
   }
-  
-  /* .links-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  
-  .links-container {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-   */
+

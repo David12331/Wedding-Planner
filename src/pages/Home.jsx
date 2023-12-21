@@ -13,7 +13,7 @@ const HomePage = () => {
         <h2>DAVID AND SARA</h2>
         <p>
           On Friday, November 3rd, hanging out with mutual friends David and Sara met for the first time...
-          {/* Insert the rest of your story here */}
+         
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px' }}>
           <button style={{ padding: '10px 20px' }}>Previous</button>

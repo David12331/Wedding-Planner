@@ -12,20 +12,20 @@ const Location = () => {
     const forecastUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`;
 
     try {
-      // Fetch current weather
+      //current weather
       const currentWeatherResponse = await fetch(currentWeatherUrl);
       const currentWeatherData = await currentWeatherResponse.json();
 
       if (!currentWeatherResponse.ok) throw new Error(currentWeatherData.error.message);
 
-      // Fetch 7-day forecast
+      //7-day forecast
       const forecastResponse = await fetch(forecastUrl);
       const forecastData = await forecastResponse.json();
 
       if (!forecastResponse.ok) throw new Error(forecastData.error.message);
 
       setCurrentWeather(currentWeatherData);
-      setDailyForecast(forecastData.forecast.forecastday); // Array of daily forecasts
+      setDailyForecast(forecastData.forecast.forecastday); 
       setError('');
     } catch (err) {
       setError(err.message);
