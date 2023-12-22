@@ -6,7 +6,7 @@ const HomePage = () => {
     <div className="flex flex-col items-center mt-10">
       <h1 className="mb-8 text-3xl font-bold">Our Story</h1>
       <img
-        src="/path-to-your-image.jpg"
+        src="https://miro.medium.com/v2/resize:fit:1400/1*pJgjnwKUastE6BIWOEU1Dg.jpeg"
         alt="David and Sara"
         className="w-4/5 h-auto mb-8"
       />
