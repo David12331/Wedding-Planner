@@ -15,10 +15,6 @@ return (
             <Link to="/registry">Registry </Link>
             <Link to="/story">Story </Link>
        
-     
-   
-
-
 
         
     </header>
